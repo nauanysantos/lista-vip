@@ -1,16 +1,16 @@
 <script>
-let idade = prompt("insira sua idade")
-let nome = prompt("insira sua idade")
+// solicita ao usuário sua idade
+let idade = parseInt(prompt("qual é a sua idade ?"));
 
-if (idade >= 18)  {
-    document.write ("acesso concedido")
-}else if (idade < 18) {
-    document.write("Desculpe, você não pode acessar a festa.")
+//solicita ao usuário se está lista de convidados 
+let estaNaLista = prompt("voce está na lista de convidados ?(sim/não)".toLowerCase);
 
-}else if (nome || ingresso == "sim" ){
-    document.write("voce está na festa")
+// verifica se o usuário pode acessar a festa
+if (idade >= 18 && (estaNaLista === "sim" || estaNaLista === "s")) {
+    document.write("Acesso concedido");
+}else {
+    alert ("Desculpe,voce não pode acessar a festa.");
 }
-
 
 
 </script>
